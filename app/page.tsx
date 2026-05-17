@@ -1,7 +1,11 @@
+import { EditorLayout } from "@/components/editor/editor-layout";
+
 export default function Home() {
   return (
-    <div className="flex h-screen items-center justify-center">
-      <p>ghost AI</p>
-    </div>
+    <EditorLayout>
+      <div className="flex h-full items-center justify-center">
+        <p className="text-text-muted text-sm">Canvas goes here</p>
+      </div>
+    </EditorLayout>
   );
 }

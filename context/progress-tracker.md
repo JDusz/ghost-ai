@@ -13,6 +13,7 @@ Update this file whenever the current phase, active feature, or implementation s
 ## Completed
 
 - Feature 01: Design system — shadcn/ui initialized, UI primitive components added (Button, Card, Dialog, Input, Tabs, Textarea, ScrollArea), lucide-react installed, lib/utils.ts cn() helper generated, globals.css updated with Ghost AI dark theme tokens and shadcn semantic variable overrides.
+- Feature 02: Editor chrome — `EditorNavbar` (fixed top bar, sidebar toggle with PanelLeftOpen/PanelLeftClose icons) and `ProjectSidebar` (floating overlay, slides in from left without pushing content, My Projects/Shared tabs with empty states, New Project button) created in `components/editor/`.
 
 ## In Progress
 
