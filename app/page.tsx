@@ -1,11 +1,12 @@
-import { EditorLayout } from "@/components/editor/editor-layout";
+import { auth } from "@clerk/nextjs/server";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return (
-    <EditorLayout>
-      <div className="flex h-full items-center justify-center">
-        <p className="text-text-muted text-sm">Canvas goes here</p>
-      </div>
-    </EditorLayout>
-  );
+export default async function RootPage() {
+  const { userId } = await auth();
+
+  if (userId) {
+    redirect("/editor");
+  } else {
+    redirect("/sign-in");
+  }
 }
